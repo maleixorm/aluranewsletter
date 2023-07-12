@@ -11,11 +11,24 @@
           theme: {
               extend: {
                   colors: {
-                      primary: '#f2dae7'
+                      primary: '#071952'
                   },
                   fontFamily: {
                       titulo: ['Vast Shadow', 'cursive']
-                  }
+                  },
+                  keyframes: {
+                        sino_kf: {
+                            '0%, 100%': {
+                                transform: 'rotate(-10deg)'
+                            },
+                            '50%': {
+                                transform: 'rotate(10deg)'
+                            },
+                        }
+                    },
+                    animation: {
+                        sino: 'sino_kf 0.31s ease-in-out infinite'
+                    },
               }
           }
       }
@@ -27,11 +40,11 @@
     <div class="p-10 flex flex-col bg-gradient-to-r from-blue-300 to-slate-600 justify-center h-44 rounded-r-xl">
       <p class="text-6xl font-black text-white font-titulo">Marcos Aleixo</p>
       <p class="text-4xl text-primary">Front-end and Back-end Developer</p>
-      <ul class="flex gap-3 mb-4">
-        <li><a class="text-white hover:font-bold hover:text-primary" href="#">Linkedin</a></li>
-        <li><a class="text-white hover:font-bold hover:text-primary" href="#">Email</a></li>
-        <li><a class="text-white hover:font-bold hover:text-primary" href="#">Github</a></li>
+      <ul class="flex gap-3 mb-4 group">
+        <li class="group-hover:animate-sino"><a class="text-white hover:font-bold hover:text-primary" href="#">Linkedin</a></li>
+        <li class="group-hover:animate-sino"><a class="text-white hover:font-bold hover:text-primary" href="#">Email</a></li>
+        <li class="group-hover:animate-sino"><a class="text-white hover:font-bold hover:text-primary" href="#">Github</a></li>
       </ul>
     </div>
-  </div>  
+  </div>
 </body>
