@@ -1,2 +1,2 @@
 # aluranewsletter
- Projeto da Alura em Tailwind CSS
+ Projeto do curso da Alura em Tailwind CSS
